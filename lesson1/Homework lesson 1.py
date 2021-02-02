@@ -30,7 +30,7 @@ class Element():
             return (t + 459.67) * 5/9
         elif iz == "K" and v == "C":
             return t + 273.15
-        elif iz == "F" and v == "F":
+        elif iz == "K" and v == "F":
             return (t + 459.67) * 5/9
         else:
             print("Неверный ввод")
