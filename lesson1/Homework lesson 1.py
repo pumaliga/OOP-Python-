@@ -15,11 +15,9 @@ class Element():
         elif t < self.t_freezing:
             return 'Затвердение'
 
-    def conversion(self, t):
-        print("Из какой шкалы конвертируем C, F, K?")
-        iz = input().upper()
-        print("В какую шкалу конвертировать C, F, K? ")
-        v = input().upper()
+
+
+    def conversion(self, t, iz, v):
         if iz == "C" and v == "F":
             return (t * 9/5) + 32
         elif iz == "C" and v == "K":
@@ -40,9 +38,9 @@ class Iron(Element):
     t_melting = 1538
     t_evaporation = 2862
     t_freezing = 1538
+
+
 Iron = Iron()
-print(Iron.agg_state(1000))
-
-
+print(Iron.conversion())
 
 
